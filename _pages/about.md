@@ -37,6 +37,3 @@ At BEARLab, we:
 We collaborate with clinicians, engineers, and AI specialists to turn ideas into impact, train the next generation of researchers, and advance the frontier of biomedical technology.
 
 ✨ Dive in to explore our projects, publications, and team!
-
-# Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons]
-#(https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
