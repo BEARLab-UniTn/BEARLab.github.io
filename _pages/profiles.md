@@ -6,6 +6,7 @@ description: members of the lab or group
 nav: true
 nav_order: 7
 
+profiles:
   # PROFESSOR
   - align: right
     image: Giorgini.jpg
