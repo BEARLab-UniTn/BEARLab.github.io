@@ -8,9 +8,8 @@ profile:
   image: BEARLab-logo.PNG
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Department of Information Engineering and Computer Science</p>
+    <p>University of Trento</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome to BEARLab, the Biomedical Engineering & AI Research Laboratory where science meets innovation! Our mission is to improve human health by combining biomedicine, engineering, and artificial intelligence.
+Welcome to BEARLab, the **Biomedicine, Engineering & AI Research** Laboratory where science meets innovation! Our mission is to improve human health by combining biomedicine, engineering, and artificial intelligence.
 
 At BEARLab, we:
 
