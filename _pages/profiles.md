@@ -8,54 +8,47 @@ nav_order: 7
 
 profiles:
   # PROFESSOR
-  - align: right
+  - name: Paolo Giorgini
+    align: right
     image: Giorgini.jpg
     content: about_Giorgini.md
     image_circular: false
     more_info: >
-      <p>224 office number</p>
-      <p>Department of Information Engineering and Computer Science</p>
-      <p>University of Trento</p>
+      <p>Full Professor</p>
 
   # Researchers
-  ## Selene Tomassini
-  - align: left
+  - name: Selene Tomassini
+    align: left
     image: Selene.jpg
     content: about_Selene.md
     image_circular: false
     more_info: >
-      <p>210 office number</p>
-      <p>Department of Information Engineering and Computer Science</p>
-      <p>University of Trento</p>
+      <p>Assistant Professor</p>
 
-  ## Marco Robol
-  - align: left
+  - name: Marco Robol
+    align: left
     image: MarcoR.jpg
     content: about_MarcoR.md
     image_circular: false
     more_info: >
-      <p>210 office number</p>
-      <p>Department of Information Engineering and Computer Science</p>
-      <p>University of Trento</p>
+      <p>Assistant Professor</p>
 
-  ## Marco Bombieri
-  - align: right
+
+  - name: Marco Bombieri
+    align: right
     image: MarcoB.jpg
     content: about_MarcoB.md
     image_circular: false
     more_info: >
-      <p>210 office number</p>
-      <p>Department of Information Engineering and Computer Science</p>
-      <p>University of Trento</p>
+          <p>Assistant Professor</p>
 
   # PHD students
-  ## Letizia Girardi
-  - align: left
+  - name: Letizia Girardi
+    align: left
     image: Letizia.jpg
     content: about_Letizia.md
     image_circular: false
     more_info: >
-      <p>246 office number</p>
-      <p>Department of Information Engineering and Computer Science</p>
-      <p>University of Trento</p>
+            <p>PhD student</p>
+
 ---
