@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /people/
-title: The Team
-description: members of the lab or group
+title: People
+description: Discover the people behind our lab – their expertise, projects, and contributions
 nav: true
 nav_order: 7
 
