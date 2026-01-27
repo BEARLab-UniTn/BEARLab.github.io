@@ -1,6 +1,6 @@
 <style>
 .medicinai-container {
-  background: #f9f9f9;
+  background: #f9f9f9; /* oppure bianco, se non vuoi il box grigio */
   padding: 2rem 3rem;
   border-radius: 16px;
   border: 1px solid #e2e2e2;
@@ -8,6 +8,19 @@
   margin-bottom: 3rem;
 }
 
+.workshops-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.workshops-section h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
 
 
 /* ---------------- HEADER ---------------- */
@@ -153,77 +166,67 @@ hr.soft {
 }
 </style>
 
-
 <!-- ---------------- CONTENITORE PRINCIPALE MEDICINAI ---------------- -->
 <div class="medicinai-container">
 
-  <!-- ---------------- HEADER LOGO + TITLE ---------------- -->
-  <div class="medicinai-header">
-    <a href="https://sites.google.com/unitn.it/medicinai/home-page" target="_blank">
-      <img src="{{ '/assets/img/medicinai-logo.png' | relative_url }}" alt="MedicinAI Logo">
-    </a>
-    <div class="header-text">
-      <h1>MedicinAI Event</h1>
-    </div>
-  </div>
-
-  <!-- ---------------- WORKSHOP + DESCRIZIONE ---------------- -->
+  <!-- ---------------- DESCRIZIONE + TITOLO ---------------- -->
   <div class="workshops-section">
-    <div class="workshop-header">Workshop - MedicinAI</div>
-      <p>MedicinAI event is a unique journey into current and future trends of AI in medicine, combining a cycle of cutting-edge seminars with a final international workshop.</p>
-    </div>
+    <p>MedicinAI event is a unique journey into current and future trends of AI in medicine, combining a cycle of cutting-edge seminars with a final international workshop.</p>
+    <h1>MedicinAI Event</h1>
 
-    <!-- WORKSHOP CARD -->
+    <!-- ---------------- WORKSHOP ---------------- -->
+    <div class="workshop-header">Workshop</div>
+
     <div class="workshop-card">
       <div class="event-content">
         <div class="event-title">AI and Decision Support in Healthcare: From Data to Clinical Impact</div>
-        <p class="event-details"><strong>4 Dicembre 2025 — 09:00</strong><br>Room A108, Polo Ferrari 1, University of Trento</p>
+        <p class="event-details"><strong>December 4, 2025 — 09:00</strong><br>Room A108, Polo Ferrari 1, University of Trento</p>
         <div class="event-section-title">Keynote Speakers</div>
         <p class="event-text"><strong>Prof. Henning Müller</strong> & <strong>Prof. Katja Bühler</strong></p>
         <div class="event-section-title">Abstract</div>
-        <p class="event-text">Il workshop fornirà panoramica completa su applicazioni cliniche dell’IA, dall’integrazione dei dati multimodali fino a strategie robuste e explainable AI per decisioni affidabili.</p>
+        <p class="event-text">The workshop will provide a comprehensive overview of clinical AI applications, from multimodal data integration to robust strategies and explainable AI for reliable decision-making.</p>
       </div>
     </div>
 
-    <!-- SEMINARI -->
+    <!-- ---------------- SEMINARS ---------------- -->
     <div class="events-header">Cycle of Seminars — MedicinAI</div>
 
-    <!-- SEMINARIO I -->
+    <!-- SEMINAR I -->
     <div class="event-card">
       <div class="event-content">
-        <div class="event-title">Seminario I — Dal dato alla conoscenza</div>
-        <div class="event-quote">"IA e dati clinici: dalla frammentazione alla visione unitaria"</div>
-        <p class="event-details"><strong>17 Ottobre 2025 — 16:30</strong><br>Aula A110, Polo Ferrari 1</p>
-        <div class="event-section-title">Relatore</div>
-        <p class="event-text"><strong>Prof. Paolo Soda</strong><br>Università Campus Bio-Medico di Roma</p>
+        <div class="event-title">Seminar I — From Data to Knowledge</div>
+        <div class="event-quote">"AI and clinical data: from fragmentation to a unified vision"</div>
+        <p class="event-details"><strong>October 17, 2025 — 16:30</strong><br>Room A110, Polo Ferrari 1</p>
+        <div class="event-section-title">Speaker</div>
+        <p class="event-text"><strong>Prof. Paolo Soda</strong><br>Campus Bio-Medico University of Rome</p>
         <div class="event-section-title">Abstract</div>
-        <p class="event-text">L’IA in medicina parte da dati spesso frammentati e incompleti; il seminario mostrerà come integrarli in una visione unitaria e multimodale del paziente.</p>
+        <p class="event-text">Medical AI often starts from fragmented and incomplete data; this seminar will show how to integrate them into a unified and multimodal vision of the patient.</p>
       </div>
     </div>
 
-    <!-- SEMINARIO II -->
+    <!-- SEMINAR II -->
     <div class="event-card">
       <div class="event-content">
-        <div class="event-title">Seminario II — Supporto decisionale</div>
-        <div class="event-quote">"L’IA al fianco del medico: diagnosi, terapia e percorsi personalizzati"</div>
-        <p class="event-details"><strong>6 Novembre 2025 — 16:30</strong><br>Aula A108, Polo Ferrari 1</p>
-        <div class="event-section-title">Relatore</div>
-        <p class="event-text"><strong>Prof. Riccardo Bellazzi</strong><br>Università di Pavia</p>
+        <div class="event-title">Seminar II — Decision Support</div>
+        <div class="event-quote">"AI alongside physicians: diagnosis, therapy, and personalized care pathways"</div>
+        <p class="event-details"><strong>November 6, 2025 — 16:30</strong><br>Room A108, Polo Ferrari 1</p>
+        <div class="event-section-title">Speaker</div>
+        <p class="event-text"><strong>Prof. Riccardo Bellazzi</strong><br>University of Pavia</p>
         <div class="event-section-title">Abstract</div>
-        <p class="event-text">Il seminario presenterà esempi di successo, dai sistemi basati su conoscenza al deep learning e modelli generativi, e discuterà prodotti commerciali e prospettive future.</p>
+        <p class="event-text">This seminar will present successful examples, from knowledge-based systems to deep learning and generative models, discussing commercial products and future perspectives.</p>
       </div>
     </div>
 
-    <!-- SEMINARIO III -->
+    <!-- SEMINAR III -->
     <div class="event-card">
       <div class="event-content">
-        <div class="event-title">Seminario III — Etica e sicurezza</div>
-        <div class="event-quote">"Affidabilità e trasparenza: come regolamentare l’uso dell’IA in sanità"</div>
-        <p class="event-details"><strong>25 Novembre 2025 — 16:30</strong><br>Aula A110, Polo Ferrari 1</p>
-        <div class="event-section-title">Relatore</div>
-        <p class="event-text"><strong>Prof. Carlo Bottari</strong> — Università di Bologna<br><strong>Co-relatore:</strong> Prof. Federico Laus — Università di Bologna</p>
+        <div class="event-title">Seminar III — Ethics and Safety</div>
+        <div class="event-quote">"Reliability and transparency: how to regulate AI use in healthcare"</div>
+        <p class="event-details"><strong>November 25, 2025 — 16:30</strong><br>Room A110, Polo Ferrari 1</p>
+        <div class="event-section-title">Speaker</div>
+        <p class="event-text"><strong>Prof. Carlo Bottari</strong> — University of Bologna<br><strong>Co-speaker:</strong> Prof. Federico Laus — University of Bologna</p>
         <div class="event-section-title">Abstract</div>
-        <p class="event-text">Il seminario analizzerà il quadro normativo italiano ed europeo e i principi etici e giuridici per un uso sicuro e consapevole dell’IA clinica.</p>
+        <p class="event-text">The seminar will analyze the Italian and European regulatory framework and ethical and legal principles for safe and conscious clinical AI use.</p>
       </div>
     </div>
 
