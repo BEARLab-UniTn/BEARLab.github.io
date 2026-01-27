@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-events",
           title: "Events",
-          description: "A comprehensive overview of upcoming and past events, complete with schedules, materials, and resources. Browse by year, term, or topic to find what interests you.",
+          description: "A comprehensive overview of upcoming and past events.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/events/";
