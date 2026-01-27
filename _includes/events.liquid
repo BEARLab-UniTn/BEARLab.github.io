@@ -1,69 +1,196 @@
----
-layout: page
-permalink: /events/
-title: Events
-description: A comprehensive overview of upcoming and past events, complete with schedules, materials, and resources.
-nav: true
-nav_order: 6
----
+<style>
+  .events-header {
+    margin-bottom: 2.5rem;
+  }
 
-<div class="events-page">
+  .events-intro {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
 
-  <!-- SEMINARIO I -->
-  <section class="event">
-    <h2>Seminario I — Dal dato alla conoscenza</h2>
-    <h3>"IA e dati clinici: dalla frammentazione alla visione unitaria"</h3>
+  .event-card {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 1.8rem 2rem;
+    margin-bottom: 2.8rem;
+    border: 1px solid #ececec;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  }
 
-    <p><strong>Data:</strong> 17 Ottobre 2025 — 16:30</p>
-    <p><strong>Luogo:</strong> Aula A110, Polo Ferrari 1</p>
+  .event-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: .4rem;
+  }
 
-    <h4>Relatore</h4>
-    <p>
-      <strong>Prof. Paolo Soda</strong><br>
-      Professore Ordinario di Sistemi di Elaborazione delle Informazioni<br>
-      Università Campus Bio-Medico di Roma
-    </p>
+  .event-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    opacity: .85;
+    margin-bottom: 1rem;
+  }
 
-    <h4>Bio</h4>
-    <p>
-      Paolo Soda si è laureato con lode in Ingegneria Biomedica presso l'Università Campus Bio-Medico (UCBM) di Roma nel 2004...
-      <!-- Puoi mantenere qui tutta la bio integrale -->
-    </p>
-  </section>
+  .event-quote {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+  }
 
-  <hr>
+  .event-details {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
 
-  <!-- SEMINARIO II -->
-  <section class="event">
-    <h2>Seminario II — Supporto decisionale</h2>
-    <h3>"L’IA al fianco del medico: diagnosi, terapia e percorsi personalizzati"</h3>
+  .event-section-title {
+    margin-top: 1.2rem;
+    margin-bottom: .3rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
 
-    <p><strong>Data:</strong> 6 Novembre 2025 — 16:30</p>
-    <p><strong>Luogo:</strong> Aula A108, Polo Ferrari 1</p>
+  .event-bio, .event-text {
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
 
-    <h4>Relatore</h4>
-    <p>
-      <strong>Prof. Riccardo Bellazzi</strong><br>
-      Professore Ordinario di Bioingegneria Elettronica e Informatica<br>
-      Università di Pavia
-    </p>
+  hr.soft {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 3rem 0;
+  }
+</style>
 
-    <h4>Bio</h4>
-    <p>
-      Riccardo Bellazzi è Professore Ordinario di Bioingegneria all'Università di Pavia...
-      <!-- Qui la bio integrale -->
-    </p>
-  </section>
+<div class="events-header">
+  <h1>Cycle of Seminars — MedicinAI</h1>
+  <p class="events-intro">
+    This seminar series opens the MedicinAI event.<br>
+    All seminars will be held in Italian and will be followed by a roundtable discussion, 
+    a Q&A session, and a buffet aperitivo.<br><br>
 
-  <hr>
+    <strong>Participation is free upon registration</strong> (see the bottom of this page).  
+    For more information: <a href="https://eventi.unitn.it/it/medicinai" target="_blank">eventi.unitn.it/it/medicinai</a>
+  </p>
 
-  <!-- SEMINARIO III -->
-  <section class="event">
-    <h2>Seminario III — Etica e sicurezza</h2>
-    <h3>"Affidabilità e trasparenza: come regolamentare l’uso dell’IA in sanità"</h3>
-
-    <p><strong>Data:</strong> 25 Novembre 2025 — 16:30</p>
-    <p><strong>Luogo:</strong> Aula A110, Polo Ferrari 1</p>
-  </section>
-
+  <p class="events-intro"><em>From here on, the content of this page will be in Italian!</em></p>
 </div>
+
+<!-- SEMINARIO I -->
+<div class="event-card">
+  <div class="event-title">Seminario I — Dal dato alla conoscenza</div>
+  <div class="event-quote">"IA e dati clinici: dalla frammentazione alla visione unitaria"</div>
+
+  <p class="event-details">
+    <strong>17 Ottobre 2025 — 16:30</strong><br>
+    Aula A110, Polo Ferrari 1
+  </p>
+
+  <div class="event-section-title">Relatore</div>
+  <p class="event-text">
+    <strong>Prof. Paolo Soda</strong><br>
+    Professore Ordinario di Sistemi di Elaborazione delle Informazioni<br>
+    Università Campus Bio-Medico di Roma
+  </p>
+
+  <div class="event-section-title">Bio</div>
+  <p class="event-bio">
+    Paolo Soda si è laureato con lode in Ingegneria Biomedica presso l'UCBM di Roma nel 2004…
+    <!-- Bio completa -->
+  </p>
+
+  <div class="event-section-title">Abstract del Seminario</div>
+  <p class="event-text">
+    L’adozione efficace dell’IA in medicina nasce dai dati…
+    <!-- Testo integrale -->
+  </p>
+
+  <div class="event-section-title">Tavola rotonda</div>
+  <p class="event-text">
+    Dott.ssa Paola Feraco — Università di Trento<br>
+    Dott. Alessandro Bazziga — APSS<br>
+    Prof. Sandro L. Fiore — Università di Trento
+  </p>
+</div>
+
+<!-- SEMINARIO II -->
+<div class="event-card">
+  <div class="event-title">Seminario II — Supporto decisionale</div>
+  <div class="event-quote">"L’IA al fianco del medico: diagnosi, terapia e percorsi personalizzati"</div>
+
+  <p class="event-details">
+    <strong>6 Novembre 2025 — 16:30</strong><br>
+    Aula A108, Polo Ferrari 1
+  </p>
+
+  <div class="event-section-title">Relatore</div>
+  <p class="event-text">
+    <strong>Prof. Riccardo Bellazzi</strong><br>
+    Professore Ordinario di Bioingegneria Elettronica e Informatica<br>
+    Università di Pavia
+  </p>
+
+  <div class="event-section-title">Bio</div>
+  <p class="event-bio">
+    Riccardo Bellazzi è Professore Ordinario di Bioingegneria all'Università di Pavia…
+    <!-- Bio completa -->
+  </p>
+
+  <div class="event-section-title">Abstract del Seminario</div>
+  <p class="event-text">
+    L'IA ha avuto sin dai primi anni del suo sviluppo l'ambizione…
+    <!-- Testo completo -->
+  </p>
+
+  <div class="event-section-title">Tavola rotonda</div>
+  <p class="event-text">
+    Prof. Vito Racanelli — Università di Trento<br>
+    Prof. Carlo C. Quattrocchi — Università di Trento<br>
+    Prof. Giuseppe Riccardi — Università di Trento
+  </p>
+</div>
+
+<!-- SEMINARIO III -->
+<div class="event-card">
+  <div class="event-title">Seminario III — Etica e sicurezza</div>
+  <div class="event-quote">"Affidabilità e trasparenza: come regolamentare l’uso dell’IA in sanità"</div>
+
+  <p class="event-details">
+    <strong>25 Novembre 2025 — 16:30</strong><br>
+    Aula A110, Polo Ferrari 1
+  </p>
+
+  <div class="event-section-title">Relatore</div>
+  <p class="event-text">
+    <strong>Prof. Carlo Bottari</strong> — Università di Bologna<br>
+    <strong>Co-relatore:</strong> Prof. Federico Laus — Università di Bologna
+  </p>
+
+  <div class="event-section-title">Bio</div>
+  <p class="event-bio">
+    Carlo Bottari è Professore dell’Università di Bologna…  
+    Federico Laus è Ricercatore in Diritto Amministrativo…
+    <!-- Bio completa -->
+  </p>
+
+  <div class="event-section-title">Abstract del Seminario</div>
+  <p class="event-text">
+    L’introduzione dell’IA nella sanità pone interrogativi cruciali…
+    <!-- Testo completo -->
+  </p>
+
+  <div class="event-section-title">Tavola rotonda</div>
+  <p class="event-text">
+    Prof. Marco A. Zenati — Harvard Medical School (online)<br>
+    Prof.ssa Paola Iamiceli — Università di Trento<br>
+    Prof. Silvio Sarubbo — Università di Trento<br>
+    Dott. Giuliano Mariotti — APSS
+  </p>
+</div>
+
+<hr class="soft">
+
+<p>
+  <strong>Per la registrazione</strong>: link coming soon
+</p>
