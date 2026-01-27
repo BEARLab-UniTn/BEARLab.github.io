@@ -1,6 +1,5 @@
-
 <style>
-/* LOGO + TITOLI ORIZZONTALI */
+/* ---------------- LOGO + TITOLI ORIZZONTALI ---------------- */
 .medicinai-header {
   display: flex;
   align-items: center;
@@ -9,7 +8,7 @@
 }
 
 .medicinai-header img {
-  width: 180px; /* puoi aumentare a 220px */
+  width: 200px;
   height: auto;
   filter: drop-shadow(0 0 8px rgba(0,0,0,0.18));
 }
@@ -26,17 +25,33 @@
   opacity: .8;
 }
 
-/* CARDS PER I SEMINARI */
+/* ---------------- EVENT CARDS ---------------- */
 .event-card {
-  background: #f3f3f3;          /* grigino più aesthetic */
+  display: flex;
+  gap: 2rem;
+  background: #f3f3f3; /* grigio chiaro aesthetic */
   border-radius: 14px;
-  padding: 2.2rem 2.3rem;
+  padding: 2rem;
   margin-bottom: 3rem;
   border: 1px solid #e2e2e2;
   box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+  align-items: flex-start;
 }
 
-/* Miglioramenti tipografici */
+/* Immagine evento */
+.event-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Testo evento */
+.event-content {
+  flex: 1;
+}
+
 .event-title {
   font-size: 1.7rem;
   font-weight: 700;
@@ -44,13 +59,13 @@
   margin-bottom: .4rem;
 }
 
-.event-subtitle,
 .event-quote {
   font-size: 1.15rem;
   font-weight: 500;
   color: #444;
   opacity: .9;
   margin-bottom: .9rem;
+  font-style: italic;
 }
 
 .event-details {
@@ -82,183 +97,114 @@ hr.soft {
   opacity: .6;
 }
 
+/* Pulsante */
+.btn-outline-primary {
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background: #007bff;
+  color: #fff;
+}
 </style>
 
-
+<!-- ---------------- HEADER ---------------- -->
 <div class="medicinai-header">
   <a href="https://sites.google.com/unitn.it/medicinai/cycle-of-seminars" target="_blank">
     <img src="{{ '/assets/img/medicinai-logo.png' | relative_url }}" alt="MedicinAI Logo">
   </a>
-
   <div class="header-text">
     <h1>One-day Workshop</h1>
     <h2>AI and Decision Support in Healthcare: From Data to Clinical Impact</h2>
   </div>
 </div>
 
-
-<div class="event">
-<div class="medicinai-hero">
-  <a href="https://sites.google.com/unitn.it/medicinai/cycle-of-seminars" target="_blank">
-    <img src="{{ '/assets/img/medicinai-logo.png' | relative_url }}" alt="MedicinAI Logo">
-  </a>
-</div>
-
-
-  <h1>One-day Workshop</h1>
-  <h2>AI and Decision Support in Healthcare: From Data to Clinical Impact</h2>
-
-  <p><strong>When?</strong> December 4, 2025</p>
-  <p><strong>Where?</strong> Room A108, Polo Ferrari 1, University of Trento</p>
-
-  <h3>Oral sessions</h3>
-  <p>Oral sessions in the morning</p>
-  <p>Oral sessions in the afternoon</p>
-
-  <!-- ---------------- KEYNOTE 1 ---------------- -->
-  <hr>
-  <h2>Keynote Speaker</h2>
-  <h3>Prof. Henning Müller</h3>
-  <p><em>Full Professor in Computer Science and in Radiology<br>
-     HES-SO Valais-Wallis & University of Geneva</em></p>
-
-  <h4>Keynote — Multimodal Medical Machine Learning</h4>
-  <p>
-    Computational tools analyzing images have mainly used them alone and not in
-    contact with other clinical data... (testo completo)
-  </p>
-
-  <!-- ---------------- KEYNOTE 2 ---------------- -->
-  <hr>
-  <h2>Keynote Speaker</h2>
-  <h3>Prof. Katja Bühler</h3>
-  <p><em>Scientific Director<br>Vienna Research Center for Visual Computing</em></p>
-
-  <h4>Keynote — Uncertainty, Reliability, and Trust in Image-Based Decision-Making</h4>
-  <p>
-    The effective integration of AI-supported decision-making in clinical practice
-    depends on understanding and managing uncertainty... (testo completo)
-  </p>
-
-<p class="text-center">
-  <a href="https://sites.google.com/unitn.it/medicinai/cycle-of-seminars"
-     class="btn btn-outline-primary"
-     target="_blank">
-     🔗 Pagina ufficiale MEDICINAI — Cycle of Seminars
-  </a>
-</p>
-</div>
-
-
-<div class="events-header">
-  <h1>Cycle of Seminars — MedicinAI</h1>
-  <p class="events-intro">
-    This seminar series opens the MedicinAI event.<br>
-    All seminars will be held in Italian and will be followed by a roundtable discussion, 
-    a Q&A session, and a buffet aperitivo.<br><br>
-</div>
-
+<!-- ---------------- EVENT CARDS ---------------- -->
 <!-- SEMINARIO I -->
 <div class="event-card">
-  <div class="event-title">Seminario I — Dal dato alla conoscenza</div>
-  <div class="event-quote">"IA e dati clinici: dalla frammentazione alla visione unitaria"</div>
+  <img src="{{ '/assets/img/seminario1.jpg' | relative_url }}" alt="Seminario I">
+  <div class="event-content">
+    <div class="event-title">Seminario I — Dal dato alla conoscenza</div>
+    <div class="event-quote">"IA e dati clinici: dalla frammentazione alla visione unitaria"</div>
 
-  <p class="event-details">
-    <strong>17 Ottobre 2025 — 16:30</strong><br>
-    Aula A110, Polo Ferrari 1
-  </p>
+    <p class="event-details">
+      <strong>17 Ottobre 2025 — 16:30</strong><br>
+      Aula A110, Polo Ferrari 1
+    </p>
 
-  <div class="event-section-title">Relatore</div>
-  <p class="event-text">
-    <strong>Prof. Paolo Soda</strong><br>
-    Professore Ordinario di Sistemi di Elaborazione delle Informazioni<br>
-    Università Campus Bio-Medico di Roma
-  </p>
+    <div class="event-section-title">Relatore</div>
+    <p class="event-text">
+      <strong>Prof. Paolo Soda</strong><br>
+      Professore Ordinario di Sistemi di Elaborazione delle Informazioni<br>
+      Università Campus Bio-Medico di Roma
+    </p>
 
-  <div class="event-section-title">Bio</div>
-  <p class="event-bio">
-    Paolo Soda si è laureato con lode in Ingegneria Biomedica presso l'UCBM di Roma nel 2004…
-    <!-- Bio completa -->
-  </p>
-
-  <div class="event-section-title">Abstract del Seminario</div>
-  <p class="event-text">
-    L’adozione efficace dell’IA in medicina nasce dai dati…
-    <!-- Testo integrale -->
-  </p>
-
-  <div class="event-section-title">Tavola rotonda</div>
-  <p class="event-text">
-    Dott.ssa Paola Feraco — Università di Trento<br>
-    Dott. Alessandro Bazziga — APSS<br>
-    Prof. Sandro L. Fiore — Università di Trento
-  </p>
+    <div class="event-section-title">Abstract</div>
+    <p class="event-text">
+      L’adozione efficace dell’IA in medicina nasce dai dati… <!-- Testo integrale -->
+    </p>
+  </div>
 </div>
 
 <!-- SEMINARIO II -->
 <div class="event-card">
-  <div class="event-title">Seminario II — Supporto decisionale</div>
-  <div class="event-quote">"L’IA al fianco del medico: diagnosi, terapia e percorsi personalizzati"</div>
+  <img src="{{ '/assets/img/seminario2.jpg' | relative_url }}" alt="Seminario II">
+  <div class="event-content">
+    <div class="event-title">Seminario II — Supporto decisionale</div>
+    <div class="event-quote">"L’IA al fianco del medico: diagnosi, terapia e percorsi personalizzati"</div>
 
-  <p class="event-details">
-    <strong>6 Novembre 2025 — 16:30</strong><br>
-    Aula A108, Polo Ferrari 1
-  </p>
+    <p class="event-details">
+      <strong>6 Novembre 2025 — 16:30</strong><br>
+      Aula A108, Polo Ferrari 1
+    </p>
 
-  <div class="event-section-title">Relatore</div>
-  <p class="event-text">
-    <strong>Prof. Riccardo Bellazzi</strong><br>
-    Professore Ordinario di Bioingegneria Elettronica e Informatica<br>
-    Università di Pavia
-  </p>
+    <div class="event-section-title">Relatore</div>
+    <p class="event-text">
+      <strong>Prof. Riccardo Bellazzi</strong><br>
+      Professore Ordinario di Bioingegneria Elettronica e Informatica<br>
+      Università di Pavia
+    </p>
 
-  <div class="event-section-title">Abstract del Seminario</div>
-  <p class="event-text">
-    L'IA ha avuto sin dai primi anni del suo sviluppo l'ambizione…
-    <!-- Testo completo -->
-  </p>
-
-  <div class="event-section-title">Tavola rotonda</div>
-  <p class="event-text">
-    Prof. Vito Racanelli — Università di Trento<br>
-    Prof. Carlo C. Quattrocchi — Università di Trento<br>
-    Prof. Giuseppe Riccardi — Università di Trento
-  </p>
+    <div class="event-section-title">Abstract</div>
+    <p class="event-text">
+      L'IA ha avuto sin dai primi anni del suo sviluppo l'ambizione… <!-- Testo completo -->
+    </p>
+  </div>
 </div>
 
 <!-- SEMINARIO III -->
 <div class="event-card">
-  <div class="event-title">Seminario III — Etica e sicurezza</div>
-  <div class="event-quote">"Affidabilità e trasparenza: come regolamentare l’uso dell’IA in sanità"</div>
+  <img src="{{ '/assets/img/seminario3.jpg' | relative_url }}" alt="Seminario III">
+  <div class="event-content">
+    <div class="event-title">Seminario III — Etica e sicurezza</div>
+    <div class="event-quote">"Affidabilità e trasparenza: come regolamentare l’uso dell’IA in sanità"</div>
 
-  <p class="event-details">
-    <strong>25 Novembre 2025 — 16:30</strong><br>
-    Aula A110, Polo Ferrari 1
-  </p>
+    <p class="event-details">
+      <strong>25 Novembre 2025 — 16:30</strong><br>
+      Aula A110, Polo Ferrari 1
+    </p>
 
-  <div class="event-section-title">Relatore</div>
-  <p class="event-text">
-    <strong>Prof. Carlo Bottari</strong> — Università di Bologna<br>
-    <strong>Co-relatore:</strong> Prof. Federico Laus — Università di Bologna
-  </p>
+    <div class="event-section-title">Relatore</div>
+    <p class="event-text">
+      <strong>Prof. Carlo Bottari</strong> — Università di Bologna<br>
+      <strong>Co-relatore:</strong> Prof. Federico Laus — Università di Bologna
+    </p>
 
-  <div class="event-section-title">Abstract del Seminario</div>
-  <p class="event-text">
-    L’introduzione dell’IA nella sanità pone interrogativi cruciali…
-    <!-- Testo completo -->
-  </p>
-
-  <div class="event-section-title">Tavola rotonda</div>
-  <p class="event-text">
-    Prof. Marco A. Zenati — Harvard Medical School (online)<br>
-    Prof.ssa Paola Iamiceli — Università di Trento<br>
-    Prof. Silvio Sarubbo — Università di Trento<br>
-    Dott. Giuliano Mariotti — APSS
-  </p>
+    <div class="event-section-title">Abstract</div>
+    <p class="event-text">
+      L’introduzione dell’IA nella sanità pone interrogativi cruciali… <!-- Testo completo -->
+    </p>
+  </div>
 </div>
 
 <hr class="soft">
 
 <p>
-  <strong>Per la registrazione</strong>: link coming soon
+  <strong>Per la registrazione:</strong> link coming soon
 </p>
