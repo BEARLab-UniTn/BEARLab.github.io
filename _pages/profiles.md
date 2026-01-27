@@ -7,6 +7,8 @@ nav: true
 nav_order: 7
 
 profiles:
+ 
+profiles:
   # PROFESSOR
   - name: Paolo Giorgini
     align: right
@@ -14,7 +16,7 @@ profiles:
     content: about_Giorgini.md
     image_circular: false
     more_info: >
-      <h3> Paolo Giorgini </h3>
+      <h3>Paolo Giorgini</h3>
       <p>Full Professor</p>
 
   # Researchers
@@ -24,7 +26,7 @@ profiles:
     content: about_Selene.md
     image_circular: false
     more_info: >
-          <h3> Selene Tomassini </h3>
+      <h3>Selene Tomassini</h3>
       <p>Assistant Professor</p>
 
   - name: Marco Robol
@@ -33,9 +35,8 @@ profiles:
     content: about_MarcoR.md
     image_circular: false
     more_info: >
-    <h3> Marco Robol </h3>
+      <h3>Marco Robol</h3>
       <p>Assistant Professor</p>
-
 
   - name: Marco Bombieri
     align: left
@@ -43,8 +44,8 @@ profiles:
     content: about_MarcoB.md
     image_circular: false
     more_info: >
-        <h3> Marco Bombieri </h3>
-          <p>Assistant Professor</p>
+      <h3>Marco Bombieri</h3>
+      <p>Assistant Professor</p>
 
   # PHD students
   - name: Letizia Girardi
@@ -53,6 +54,6 @@ profiles:
     content: about_Letizia.md
     image_circular: false
     more_info: >
-            <p>PhD student</p>
+      <p>PhD student</p>
 
 ---
